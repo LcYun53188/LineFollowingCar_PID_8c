@@ -1,21 +1,36 @@
-# Keil MDK-ARM
-MDK-ARM/*.uvoptx
-MDK-ARM/*.uvguix.*
-MDK-ARM/*.bak
-MDK-ARM/*.dep
-MDK-ARM/Listing/
-MDK-ARM/Output/
-MDK-ARM/RTE/
-MDK-ARM/*.scvd
-MDK-ARM/*.uvgui.*
+# Keil MDK-ARM common artifacts
+**/MDK-ARM/*.uvoptx
+**/MDK-ARM/*.uvguix.*
+**/MDK-ARM/*.bak
+**/MDK-ARM/*.dep
+**/MDK-ARM/*.scvd
+**/MDK-ARM/*.uvgui.*
+**/MDK-ARM/JLink*
+
+# Keil MDK-ARM folders to ignore
+**/MDK-ARM/Listing/
+**/MDK-ARM/Output/
+**/MDK-ARM/RTE/
+**/MDK-ARM/DebugConfig/
+**/MDK-ARM/Car_8c_PID/
+
+# Keep source files even if in MDK-ARM (uncommon but present here)
+!**/MDK-ARM/*.c
+!**/MDK-ARM/*.h
+!**/MDK-ARM/*.s
 
 # STM32CubeMX
-.mxproject
+**/.mxproject
 # Car_8c_PID.ioc # Usually we keep .ioc files
 
-# Built files
+# Built files (recursive)
 *.o
 *.d
+*.crf
+*.htm
+*.lnp
+*.sct
+*.dep
 *.elf
 *.hex
 *.bin
