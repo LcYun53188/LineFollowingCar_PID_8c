@@ -1,0 +1,36 @@
+# Keil MDK-ARM
+MDK-ARM/*.uvoptx
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.bak
+MDK-ARM/*.dep
+MDK-ARM/Listing/
+MDK-ARM/Output/
+MDK-ARM/RTE/
+MDK-ARM/*.scvd
+MDK-ARM/*.uvgui.*
+
+# STM32CubeMX
+.mxproject
+# Car_8c_PID.ioc # Usually we keep .ioc files
+
+# Built files
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# IDEs
+.vscode/
+.settings/
+.project
+.cproject
+
+# Common
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
